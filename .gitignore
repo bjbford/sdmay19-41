@@ -1,0 +1,8 @@
+*_sysgen.log
+*_sysgen_error.log
+*.asv
+*.jou
+*.pyc
+
+*~
+.*.swp
