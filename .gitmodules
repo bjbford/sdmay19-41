@@ -4,3 +4,9 @@
 [submodule "mlib_devel"]
 	path = mlib_devel
 	url = https://github.com/bjbford/mlib_devel.git
+[submodule "migen"]
+	path = migen
+	url = https://github.com/bjbford/migen.git
+[submodule "litex"]
+	path = litex
+	url = https://github.com/bjbford/litex.git
