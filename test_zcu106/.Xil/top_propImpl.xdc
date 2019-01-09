@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:/home/casper/sdmay19-41/test_zcu106/top.xdc rfile:../top.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC AL11 [get_ports user_led]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC H9 [get_ports clk125_p]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC G9 [get_ports clk125_n]

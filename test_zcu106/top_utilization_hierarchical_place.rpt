@@ -1,0 +1,28 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (lin64) Build 2348494 Mon Oct  1 18:25:39 MDT 2018
+| Date         : Wed Jan  9 14:19:09 2019
+| Host         : co3050-casper running 64-bit Ubuntu 16.04.5 LTS
+| Command      : report_utilization -hierarchical -file top_utilization_hierarchical_place.rpt
+| Design       : top
+| Device       : xczu7evffvc1156-2
+| Design State : Fully Placed
+-----------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------+--------+------------+------------+---------+------+-----+--------+--------+------+--------------+
+| Instance | Module | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | URAM | DSP48 Blocks |
++----------+--------+------------+------------+---------+------+-----+--------+--------+------+--------------+
+| top      |  (top) |          1 |          1 |       0 |    0 |  27 |      0 |      0 |    0 |            0 |
++----------+--------+------------+------------+---------+------+-----+--------+--------+------+--------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
