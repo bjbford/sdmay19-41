@@ -1,0 +1,39 @@
+------------------------------------------------------------------------
+
+PDFs / LINKS / POWERPOINTS / RESOURCES
+
+Xilinix AXI Reference Guide 		(AXIRG)
+https://www.xilinx.com/support/documentation/ip_documentation/axi_ref_guide/v13_4/ug761_axi_reference_guide.pdf
+
+------------------------------------------------------------------------
+
+Block Diagrams / Tables
+
+	* AXI Read / Write Architecture : Page 5 (AXIRG)
+
+	* AXI Interconnect (Top Level) : Page 18 (AXIRG)
+
+	* AXI4-Stream Signals : Page 43 (AXIRG)
+
+------------------------------------------------------------------------
+
+AXI (AXIRG)
+	* AXI4 : High-performance memory mapped
+		+ max burst of 256 words per transaction (w/ single address)
+		+ Data width options (32, 64, 256, 512, or 1024 bits)
+
+	* AXI4-Lite : simple, low throughput memory mapped 
+		+ single transaction
+		+ Data width 32 bits
+
+	* AXI4-Stream : High-speed data streaming (non memory mapped)
+		+ no address phase, unlimited data burst size
+		+ Signals
+			- TDATA
+				> Size rounds up to a multiple of 8
+				> Non-atomic data is concatenated until atomic units are achieved
+		+ Unused bits
+			- Unsigned : Unused bits are zero
+			- Signed : Unused bits are copies of signed bit
+			
+	* 32-bit address width

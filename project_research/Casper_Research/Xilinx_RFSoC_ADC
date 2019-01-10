@@ -1,0 +1,65 @@
+------------------------------------------------------------------------
+
+PDFs / LINKS / POWERPOINTS / RESOURCES
+
+ZCU111 RFSoC RF Data Converter (Eval Tool) User Guide 		(DCUG)
+https://www.xilinx.com/support/documentation/boards_and_kits/zcu111/2018_2/ug1287-zcu111-rfsoc-eval-tool.pdf
+
+
+Zynq UltraScale+ RFSoC Data Sheet: Overview 		(DSO)
+https://www.xilinx.com/support/documentation/data_sheets/ds889-zynq-usp-rfsoc-overview.pdf
+
+Xilinix IP CORE			(XIP)
+
+RFSoC Data Converter GUI Guide 		(DCGG)
+https://blog.hackster.io/microzed-chronicles-a-look-at-the-rfsoc-and-the-zcu111-c654e89b54
+
+ZCU111-rfsoc-rfdc-getting-started.pdf (MTS Tutorial)
+casper -> /VIVADO/projects/zcu111/MTS_Reference_Design/original/mts_design/docs/
+
+------------------------------------------------------------------------
+
+Block Diagrams / Tables
+
+	* RF Data Converter Evaluation Tool System Level Block Diagram : Page 9 (DCUG)
+
+	* Hardware Block Diagram : Page 11 (DCUG)
+
+	* Datapath Implementation for 8 Channel RF-ADC : Page 21 (DCUG)
+		+ Control Switch Page : 22 (DCUG)
+		+ IQ Merge Datapath : Page 23 (DCUG)
+		+ Channel Select MUX : Page 23 (DCUG)
+
+	* GPIO Selection : page 24 & 25 (DCUG)
+
+	* RF-ADC control & datapath clock table : Page 31 (DCUG)
+
+	* ADC Memory Map : Page 61 (DCUG)
+
+------------------------------------------------------------------------
+
+Architecture Information
+
+	* Clock (DCUG)
+		+ CLK hookups : Page 27 (DCUG)
+		+ RF-ADC & RF-DAC clk generation (LMK comps -> RF PLLs) Phase Locked Loops 
+		+ MTS (Multi-Tile Synchronization) (All ADC tiles/channels captured simultaneously) : Page 28 (DCUG)
+		+ RF-ADC MTS Clocking Syncing : Page 29 & 30 (DCUG)
+
+	* Resets (DCUG)
+		+ Each ADC/DAC FIFO has respective reset.
+
+	* ADC (DSO)
+		+ Max sample rate of 4GHz (4.096 GSPS)
+		+ Individual ADC config for real data and pair for I & Q
+		+ 12-bit ADC resolution (14-bit DAC)
+		+ 4 ADC tiles w/ 2 ADC ports per tile along with 1 PLL per tile
+		+ Channel Implementations
+			- 4 channels -> 2.058 GSPS
+			- 2 channels -> 4.096 GSPS
+		+ 80% pass band / 89 dB stop-band attenuation
+		+ 48-bit NCO (numerically controlled oscillator) per ADC
+		+ AXI4 & AXI4-Stream interfaces (XIP)
+
+------------------------------------------------------------------------
+
